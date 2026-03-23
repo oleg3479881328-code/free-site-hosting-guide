@@ -7,208 +7,195 @@
   <meta name="description" content="Подборка бесплатных сервисов для маленьких экспериментов с сайтами: GitHub Pages, Cloudflare Pages, Vercel, Netlify, Render, Oracle Cloud и другие.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <div class="masthead">
-      <div class="masthead-brand">HOSTING GUIDE</div>
-      <div class="masthead-meta">Бесплатные серверы и хостинги для небольших сайтов</div>
-    </div>
+  <div class="site-topline"></div>
 
-    <header class="hero">
-      <p class="eyebrow">Маленькие эксперименты с сайтами</p>
-      <h1>Где взять бесплатный хостинг или сервер для первого сайта</h1>
-      <p class="hero-copy">
-        Это короткая и понятная страница по теме, которую мы обсуждали: где можно бесплатно
-        разместить маленький сайт, демо-проект или тестовый backend без лишней боли.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#top-picks">Выбрать вариант</a>
-        <a class="button button-secondary" href="#all-services">Смотреть все сервисы</a>
+  <div class="page-shell">
+    <header class="news-header">
+      <div class="brand-row">
+        <div class="brand-left">
+          <button class="menu-button" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="brand" href="#">HOST</a>
+          <nav class="primary-nav">
+            <a href="#static">Static</a>
+            <a href="#fullstack">Full-Stack</a>
+            <a href="#vps">VPS</a>
+            <a href="#php">PHP</a>
+            <a href="#sources">Links</a>
+          </nav>
+        </div>
+        <div class="brand-right">
+          <a href="https://github.com/oleg3479881328-code/free-site-hosting-guide" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.notion.so/32ca08dab06981e2ae87cf80c0f2dba7" target="_blank" rel="noreferrer">Notion</a>
+        </div>
       </div>
-      <ul class="hero-points">
-        <li>Для статических сайтов лучше всего подходят GitHub Pages, Cloudflare Pages и Netlify.</li>
-        <li>Для frontend + API чаще всего удобнее Vercel, Render или Cloud Run.</li>
-        <li>Если нужен настоящий VPS, стоит смотреть Oracle Cloud Free Tier или Google Cloud free tier.</li>
-      </ul>
+
+      <div class="ticker">
+        <span class="ticker-label">Live Guide:</span>
+        <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+        <span class="divider">|</span>
+        <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a>
+        <span class="divider">|</span>
+        <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a>
+        <span class="divider">|</span>
+        <a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Free Tier</a>
+        <span class="divider">|</span>
+        <strong>Тема:</strong> бесплатные хостинги и серверы для маленьких сайтов
+      </div>
     </header>
 
     <main>
-      <section id="top-picks" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Быстрый старт</p>
-          <h2>Лучшие варианты по сценарию</h2>
+      <section class="lead-grid">
+        <aside class="rail rail-left">
+          <article class="story-card">
+            <div class="story-visual visual-github"></div>
+            <h3><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages подходит для первого простого сайта</a></h3>
+            <p>Если у вас обычный `HTML/CSS/JS` без backend, это один из самых быстрых и понятных способов публикации.</p>
+          </article>
+
+          <article class="story-card">
+            <div class="story-visual visual-cloudflare"></div>
+            <h3><a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages хорош, когда нужен CDN и быстрый старт</a></h3>
+            <p>Сильный бесплатный вариант для статических сайтов и edge-функций.</p>
+          </article>
+
+          <ul class="headline-list">
+            <li><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify удобен для лендингов и SPA</a></li>
+            <li><a href="https://firebase.google.com/docs/hosting/usage-quotas-pricing" target="_blank" rel="noreferrer">Firebase Hosting полезен в Firebase-проектах</a></li>
+            <li><a href="https://www.digitalocean.com/pricing/app-platform" target="_blank" rel="noreferrer">DigitalOcean дает free static apps</a></li>
+          </ul>
+        </aside>
+
+        <section class="lead-story">
+          <p class="lead-kicker">Главный вывод</p>
+          <h1>Бесплатный сайт проще всего запускать через GitHub Pages, Cloudflare Pages или Vercel</h1>
+
+          <div class="lead-visual">
+            <div class="lead-badge">TOP PICKS</div>
+            <div class="server-block">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="network-lines">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+          </div>
+
+          <h2 class="lead-subtitle">Для маленьких экспериментов чаще всего не нужен “настоящий сервер”, а нужен быстрый и бесплатный способ выложить страницу в интернет.</h2>
+          <p class="lead-summary">Если нужен просто сайт, начинайте со статического хостинга. Если нужен frontend плюс API, берите Vercel, Render или Cloud Run. Если нужен именно VPS, лучше всего смотреть Oracle Cloud Free Tier и Google Cloud free tier.</p>
+
+          <div class="lead-links">
+            <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+            <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a>
+            <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a>
+            <a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Free Tier</a>
+          </div>
+        </section>
+
+        <aside class="rail rail-right">
+          <article class="side-block">
+            <p class="side-label">Streaming Now</p>
+            <div class="side-visual visual-stack"></div>
+            <h3><a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render удобен для небольшого backend, но free-сервисы могут “засыпать”</a></h3>
+          </article>
+
+          <article class="side-block">
+            <p class="side-label">VPS</p>
+            <div class="side-visual visual-oracle"></div>
+            <h3><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier остается одним из самых заметных бесплатных VPS-вариантов</a></h3>
+          </article>
+
+          <article class="side-block">
+            <p class="side-label">PHP</p>
+            <h3><a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree и AwardSpace подходят для учебных PHP / MySQL проектов</a></h3>
+          </article>
+        </aside>
+      </section>
+
+      <section class="news-section compact-grid">
+        <div class="section-title">
+          <span></span>
+          <h2>Что выбрать по задаче</h2>
         </div>
 
-        <div class="card-grid">
-          <article class="info-card accent-cyan">
-            <p class="card-tag">Статический сайт</p>
-            <h3><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a></h3>
-            <p>Самый понятный путь для простого сайта на HTML, CSS и JavaScript, особенно если код лежит на GitHub.</p>
+        <div class="choice-grid">
+          <article class="mini-panel" id="static">
+            <p class="mini-tag">Static</p>
+            <h3>Простой HTML/CSS/JS сайт</h3>
+            <p><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a> или <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a></p>
           </article>
-
-          <article class="info-card accent-amber">
-            <p class="card-tag">Быстрый и современный</p>
-            <h3><a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a></h3>
-            <p>Очень сильный бесплатный вариант для статических сайтов и edge-функций с быстрым глобальным CDN.</p>
+          <article class="mini-panel" id="fullstack">
+            <p class="mini-tag">Frontend</p>
+            <h3>React / Next.js / SPA</h3>
+            <p><a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a> или <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify</a></p>
           </article>
-
-          <article class="info-card accent-red">
-            <p class="card-tag">React / Next.js</p>
-            <h3><a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a></h3>
-            <p>Отлично подходит для frontend-проектов, демо-приложений и небольших API без сложной настройки.</p>
+          <article class="mini-panel">
+            <p class="mini-tag">API</p>
+            <h3>Frontend + backend demo</h3>
+            <p><a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render</a>, <a href="https://cloud.google.com/run/pricing" target="_blank" rel="noreferrer">Cloud Run</a>, <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a></p>
           </article>
-
-          <article class="info-card accent-green">
-            <p class="card-tag">Свой сервер</p>
-            <h3><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a></h3>
-            <p>Хороший вариант, если нужен именно VPS, но он требует уже более уверенной ручной настройки.</p>
+          <article class="mini-panel" id="vps">
+            <p class="mini-tag">Server</p>
+            <h3>Нужен VPS</h3>
+            <p><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a> или <a href="https://cloud.google.com/free/docs/gcp-free-tier" target="_blank" rel="noreferrer">Google Cloud free tier</a></p>
+          </article>
+          <article class="mini-panel" id="php">
+            <p class="mini-tag">PHP</p>
+            <h3>PHP / MySQL / WordPress</h3>
+            <p><a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree</a> и <a href="https://www.awardspace.com/free-hosting/" target="_blank" rel="noreferrer">AwardSpace</a></p>
+          </article>
+          <article class="mini-panel warning-panel">
+            <p class="mini-tag">Важно</p>
+            <h3>Не каждый free tier годится для production</h3>
+            <p>У одних сервисов это trial, у других sleep без трафика, у третьих жесткие лимиты.</p>
           </article>
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Простой выбор</p>
-          <h2>Что выбрать без долгих раздумий</h2>
+      <section class="news-section source-section" id="sources">
+        <div class="section-title">
+          <span></span>
+          <h2>Все ссылки</h2>
         </div>
 
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Сценарий</th>
-                <th>Что выбрать</th>
-                <th>Почему</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Простой HTML/CSS/JS сайт</td>
-                <td><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a> или <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a></td>
-                <td>Минимум сложностей и быстрый старт</td>
-              </tr>
-              <tr>
-                <td>React / Next.js</td>
-                <td><a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a> или <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify</a></td>
-                <td>Удобный деплой из Git и хороший developer experience</td>
-              </tr>
-              <tr>
-                <td>Frontend + API</td>
-                <td><a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render</a>, <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a>, <a href="https://cloud.google.com/run/pricing" target="_blank" rel="noreferrer">Cloud Run</a></td>
-                <td>Подходит для демо и маленьких pet-проектов</td>
-              </tr>
-              <tr>
-                <td>Нужен VPS</td>
-                <td><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a>, <a href="https://cloud.google.com/free/docs/gcp-free-tier" target="_blank" rel="noreferrer">Google Cloud free tier</a></td>
-                <td>Это уже ближе к настоящему серверу</td>
-              </tr>
-              <tr>
-                <td>PHP / MySQL / WordPress</td>
-                <td><a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree</a>, <a href="https://www.awardspace.com/free-hosting/" target="_blank" rel="noreferrer">AwardSpace</a></td>
-                <td>Подходит для учебных и пробных проектов</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="all-services" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Полная подборка</p>
-          <h2>Сервисы и комментарии</h2>
-        </div>
-
-        <div class="category-grid">
-          <article class="category-card">
-            <h3>Лучшие для простого статического сайта</h3>
-            <ul>
-              <li><a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages</a> — очень сильный бесплатный вариант, если нужен быстрый старт и хорошая сеть.</li>
-              <li><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a> — отличный выбор, если не нужен backend и проект хранится на GitHub.</li>
-              <li><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify</a> — удобен для landing page, SPA и небольших статических проектов.</li>
-              <li><a href="https://firebase.google.com/docs/hosting/usage-quotas-pricing" target="_blank" rel="noreferrer">Firebase Hosting</a> — особенно хорош, если вы уже рядом с экосистемой Firebase.</li>
-            </ul>
-          </article>
-
-          <article class="category-card">
-            <h3>Лучшие для frontend + backend demo</h3>
-            <ul>
-              <li><a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel</a> — очень удобен для Next.js, фронтенда и небольших API.</li>
-              <li><a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render</a> — полезен для маленького backend, но free web services могут засыпать без трафика.</li>
-              <li><a href="https://developers.cloudflare.com/pages/functions/pricing/" target="_blank" rel="noreferrer">Cloudflare Pages + Functions</a> — быстрый путь для экспериментов с edge-функциями.</li>
-              <li><a href="https://cloud.google.com/run/pricing" target="_blank" rel="noreferrer">Google Cloud Run</a> — гибкий вариант для контейнеров и API.</li>
-            </ul>
-          </article>
-
-          <article class="category-card">
-            <h3>Если нужен именно сервер</h3>
-            <ul>
-              <li><a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a> — один из самых интересных вариантов именно как бесплатный сервер.</li>
-              <li><a href="https://cloud.google.com/free/docs/gcp-free-tier" target="_blank" rel="noreferrer">Google Cloud free tier</a> — хороший выбор для маленького Linux-сервера или Cloud Run.</li>
-              <li><a href="https://aws.amazon.com/free/terms/" target="_blank" rel="noreferrer">AWS Free Tier</a> — подходит для проб и обучения, но уже не самый удобный путь для долгого бесплатного размещения.</li>
-              <li><a href="https://azure.microsoft.com/en-us/pricing/free-services" target="_blank" rel="noreferrer">Azure Free Account</a> — полезен как trial, но не как постоянный бесплатный сервер.</li>
-            </ul>
-          </article>
-
-          <article class="category-card">
-            <h3>Если нужен PHP / MySQL / WordPress</h3>
-            <ul>
-              <li><a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree</a> — быстрый учебный вариант для простых PHP-проектов.</li>
-              <li><a href="https://www.awardspace.com/free-hosting/" target="_blank" rel="noreferrer">AwardSpace</a> — классический free shared hosting для пробных задач.</li>
-              <li><a href="https://freehostingnoads.net/" target="_blank" rel="noreferrer">FreeHostingNoAds</a> — годится только для очень простых тестов и учебных сайтов.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Важно понимать</p>
-          <h2>Не каждый free tier одинаково полезен</h2>
-        </div>
-
-        <div class="warning-box">
-          <p><strong>Бесплатно</strong> не всегда значит <strong>подходит для production</strong>.</p>
-          <p>У одних сервисов это trial, у других есть сон без трафика, у третьих ограничены сборки, регионы или трафик.</p>
-        </div>
-
-        <ul class="plain-list">
-          <li>Если нужна максимальная простота, начинайте со статического хостинга.</li>
-          <li>Если нужен backend, сначала смотрите platform hosting, а не VPS.</li>
-          <li>Если нужен именно сервер, будьте готовы настраивать Linux, SSL, деплой и домен вручную.</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Официальные источники</p>
-          <h2>Все ссылки в одном месте</h2>
-        </div>
-
-        <div class="links-grid">
-          <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
-          <a href="https://docs.github.com/enterprise-cloud@latest/pages/getting-started-with-github-pages/github-pages-limits" target="_blank" rel="noreferrer">GitHub Pages Limits</a>
-          <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages Limits</a>
-          <a href="https://developers.cloudflare.com/pages/functions/pricing/" target="_blank" rel="noreferrer">Cloudflare Functions Pricing</a>
-          <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel Pricing</a>
-          <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify Pricing</a>
-          <a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render Free Tier</a>
-          <a href="https://firebase.google.com/docs/hosting/usage-quotas-pricing" target="_blank" rel="noreferrer">Firebase Hosting</a>
-          <a href="https://azure.microsoft.com/en-us/pricing/details/app-service/static/" target="_blank" rel="noreferrer">Azure Static Web Apps</a>
-          <a href="https://www.digitalocean.com/pricing/app-platform" target="_blank" rel="noreferrer">DigitalOcean App Platform</a>
-          <a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a>
-          <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm" target="_blank" rel="noreferrer">Oracle Always Free Resources</a>
-          <a href="https://cloud.google.com/free/docs/gcp-free-tier" target="_blank" rel="noreferrer">Google Cloud Free Tier</a>
-          <a href="https://cloud.google.com/run/pricing" target="_blank" rel="noreferrer">Google Cloud Run</a>
-          <a href="https://azure.microsoft.com/en-us/pricing/free-services" target="_blank" rel="noreferrer">Azure Free Services</a>
-          <a href="https://aws.amazon.com/free/terms/" target="_blank" rel="noreferrer">AWS Free Tier Terms</a>
-          <a href="https://aws.amazon.com/amplify/pricing/" target="_blank" rel="noreferrer">AWS Amplify Pricing</a>
-          <a href="https://aws.amazon.com/lightsail/pricing/" target="_blank" rel="noreferrer">AWS Lightsail Pricing</a>
-          <a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree</a>
-          <a href="https://www.awardspace.com/free-hosting/" target="_blank" rel="noreferrer">AwardSpace</a>
-          <a href="https://freehostingnoads.net/" target="_blank" rel="noreferrer">FreeHostingNoAds</a>
+        <div class="source-columns">
+          <div>
+            <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+            <a href="https://docs.github.com/enterprise-cloud@latest/pages/getting-started-with-github-pages/github-pages-limits" target="_blank" rel="noreferrer">GitHub Pages Limits</a>
+            <a href="https://developers.cloudflare.com/pages/platform/limits/" target="_blank" rel="noreferrer">Cloudflare Pages Limits</a>
+            <a href="https://developers.cloudflare.com/pages/functions/pricing/" target="_blank" rel="noreferrer">Cloudflare Functions Pricing</a>
+            <a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel Pricing</a>
+            <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify Pricing</a>
+            <a href="https://render.com/docs/free" target="_blank" rel="noreferrer">Render Free Tier</a>
+          </div>
+          <div>
+            <a href="https://firebase.google.com/docs/hosting/usage-quotas-pricing" target="_blank" rel="noreferrer">Firebase Hosting</a>
+            <a href="https://azure.microsoft.com/en-us/pricing/details/app-service/static/" target="_blank" rel="noreferrer">Azure Static Web Apps</a>
+            <a href="https://www.digitalocean.com/pricing/app-platform" target="_blank" rel="noreferrer">DigitalOcean App Platform</a>
+            <a href="https://www.oracle.com/cloud/free/" target="_blank" rel="noreferrer">Oracle Cloud Free Tier</a>
+            <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm" target="_blank" rel="noreferrer">Oracle Always Free Resources</a>
+            <a href="https://cloud.google.com/free/docs/gcp-free-tier" target="_blank" rel="noreferrer">Google Cloud Free Tier</a>
+            <a href="https://cloud.google.com/run/pricing" target="_blank" rel="noreferrer">Google Cloud Run</a>
+          </div>
+          <div>
+            <a href="https://azure.microsoft.com/en-us/pricing/free-services" target="_blank" rel="noreferrer">Azure Free Services</a>
+            <a href="https://aws.amazon.com/free/terms/" target="_blank" rel="noreferrer">AWS Free Tier Terms</a>
+            <a href="https://aws.amazon.com/amplify/pricing/" target="_blank" rel="noreferrer">AWS Amplify Pricing</a>
+            <a href="https://aws.amazon.com/lightsail/pricing/" target="_blank" rel="noreferrer">AWS Lightsail Pricing</a>
+            <a href="https://www.infinityfree.com/" target="_blank" rel="noreferrer">InfinityFree</a>
+            <a href="https://www.awardspace.com/free-hosting/" target="_blank" rel="noreferrer">AwardSpace</a>
+            <a href="https://freehostingnoads.net/" target="_blank" rel="noreferrer">FreeHostingNoAds</a>
+          </div>
         </div>
       </section>
     </main>
