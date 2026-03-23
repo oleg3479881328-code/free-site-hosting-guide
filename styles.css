@@ -171,7 +171,9 @@ a {
 .side-visual,
 .lead-visual {
   width: 100%;
+  display: block;
   background: #ececec;
+  object-fit: cover;
 }
 
 .story-visual {
@@ -182,30 +184,6 @@ a {
 .side-visual {
   aspect-ratio: 1.7 / 1;
   margin: 8px 0 10px;
-}
-
-.visual-github {
-  background:
-    linear-gradient(135deg, rgba(0, 0, 0, 0.14), transparent 58%),
-    linear-gradient(180deg, #c7d8f8, #eef3fb);
-}
-
-.visual-cloudflare {
-  background:
-    linear-gradient(135deg, rgba(204, 0, 0, 0.08), transparent 58%),
-    linear-gradient(180deg, #fde2cc, #fff2e6);
-}
-
-.visual-stack {
-  background:
-    linear-gradient(135deg, rgba(0, 0, 0, 0.15), transparent 52%),
-    linear-gradient(180deg, #dce8dd, #edf6ee);
-}
-
-.visual-oracle {
-  background:
-    linear-gradient(135deg, rgba(204, 0, 0, 0.12), transparent 52%),
-    linear-gradient(180deg, #f6d8d8, #fff2f2);
 }
 
 .story-card h3,
@@ -269,9 +247,15 @@ a {
   overflow: hidden;
   aspect-ratio: 1.8 / 1;
   margin: 18px 0 16px;
-  background:
-    radial-gradient(circle at 18% 75%, rgba(255, 255, 255, 0.85), transparent 15%),
-    linear-gradient(180deg, #e0e0e0 0%, #d0d0d0 35%, #c2c2c2 100%);
+  background: #d0d0d0;
+}
+
+.lead-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .lead-badge {
